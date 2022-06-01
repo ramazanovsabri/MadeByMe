@@ -36,18 +36,33 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
 /*DEFOLT SETTINGS END*/
-
+.congrats{
+	position: absolute;
+	z-index: -1;
+	display: flex;
+	height: 30%;
+	justify-content: center;
+	align-items: center;
+	font-size: 60px;
+}
+.earth{
+	opacity: 0;
+	transition-duration: 1s;
+}
+.earth:hover{
+	opacity: 1;
+}
+.starter{
+	display: flex;
+	justify-content: center;
+	min-width: 1100px;
+}
 body{
 	overflow: hidden;
 	width: 100%;
 	font-family: 'Nanum Myeongjo', serif;
 	font-weight: 350;
 	text-align: center;
-	opacity: 0;
-	transition-duration: 1.5s;
-}
-body:hover{
-	opacity: 1;
 }
 /*LINE TAGS START*/
 .line{
@@ -64,7 +79,6 @@ body:hover{
 }
 /*HEADER TAGS START*/
 .header{
-	overflow: hidden;
 	margin-bottom: 0px;
 	width: 1100px;
 	height: 75px;
@@ -363,9 +377,4 @@ a{
 }
 a:hover{
 	text-decoration: underline;
-}
-@media all and (min-width: 640px) and (max-width: 734px){
-    * {
-       background: red;
-    }
 }
